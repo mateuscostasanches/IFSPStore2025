@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "F9mCkfbxw2Q=",
+  "success": true,
+  "projectFilePath": "C:\\mateus\\IFSPStore\\IFSPStore.Domain\\IFSPStore.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mateus28\\.nuget\\packages\\fluentvalidation\\12.1.0\\fluentvalidation.12.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

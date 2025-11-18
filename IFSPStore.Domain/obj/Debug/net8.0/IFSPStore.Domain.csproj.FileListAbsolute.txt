@@ -1,0 +1,13 @@
+C:\mateus\IFSPStore\IFSPStore.Domain\bin\Debug\net8.0\IFSPStore.Domain.deps.json
+C:\mateus\IFSPStore\IFSPStore.Domain\bin\Debug\net8.0\IFSPStore.Domain.dll
+C:\mateus\IFSPStore\IFSPStore.Domain\bin\Debug\net8.0\IFSPStore.Domain.pdb
+C:\mateus\IFSPStore\IFSPStore.Domain\obj\Debug\net8.0\IFSPStore.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\mateus\IFSPStore\IFSPStore.Domain\obj\Debug\net8.0\IFSPStore.Domain.AssemblyInfoInputs.cache
+C:\mateus\IFSPStore\IFSPStore.Domain\obj\Debug\net8.0\IFSPStore.Domain.AssemblyInfo.cs
+C:\mateus\IFSPStore\IFSPStore.Domain\obj\Debug\net8.0\IFSPStore.Domain.csproj.CoreCompileInputs.cache
+C:\mateus\IFSPStore\IFSPStore.Domain\obj\Debug\net8.0\IFSPStore.Domain.dll
+C:\mateus\IFSPStore\IFSPStore.Domain\obj\Debug\net8.0\refint\IFSPStore.Domain.dll
+C:\mateus\IFSPStore\IFSPStore.Domain\obj\Debug\net8.0\IFSPStore.Domain.pdb
+C:\mateus\IFSPStore\IFSPStore.Domain\obj\Debug\net8.0\ref\IFSPStore.Domain.dll
+C:\mateus\IFSPStore\IFSPStore.Domain\obj\Debug\net8.0\IFSPStore.Domain.sourcelink.json
+C:\mateus\IFSPStore\IFSPStore.Domain\obj\Debug\net8.0\IFSPStore.Domain.csproj.AssemblyReference.cache
