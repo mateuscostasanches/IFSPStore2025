@@ -1,7 +1,9 @@
-﻿namespace IFSPStore.Domain.Base
+﻿
+namespace IFSPStore.Domain.Base
 {
     public interface IBaseRepository<TEntity> where TEntity : IBaseEntity
     {
+
         void CleanChageTracker();
         void AttachObject(object obj);
         void Insert(TEntity obj);
@@ -11,4 +13,5 @@
         TEntity Select(object id, IList<string>? includes = null);
 
     }
+
 }

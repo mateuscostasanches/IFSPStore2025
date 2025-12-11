@@ -1,20 +1,28 @@
-﻿using AutoMapper;
+﻿
+using AutoMapper;
 using FluentValidation;
 using IFSPStore.Domain.Base;
 
 namespace IFSPStore.Service.Service
 {
+
     public class BaseService<TEntity> : IBaseService<TEntity> where TEntity : IBaseEntity
     {
+
+        #region Variables
         private readonly IBaseRepository<TEntity> _baseRepository;
         private readonly IMapper _mapper;
+        #endregion 
 
+        #region Constructor
         public BaseService(IBaseRepository<TEntity> baseRepository, IMapper mapper)
         {
             _baseRepository = baseRepository;
             _mapper= mapper;
         }
+        #endregion
 
+        #region Methods
         public TOutputModel Add<TInputModel, TOutputModel, TValidator>(TInputModel inputModel)
             where TInputModel : class
             where TOutputModel : class
@@ -66,5 +74,8 @@ namespace IFSPStore.Service.Service
             _baseRepository.Update(entity);
             return _mapper.Map<TOutputModel>(entity);
         }
+        #endregion 
+
     }
+
 }

@@ -1,22 +1,31 @@
-﻿using FluentValidation;
+﻿
+using FluentValidation;
 using IFSPStore.Domain.Entities;
 
 namespace IFSPStore.Service.Validators
 {
+
     public class UserValidator : AbstractValidator<User>
     {
 
+        #region Validation
         public UserValidator() {
 
             RuleFor(c => c.Name)
-                .NotEmpty().WithMessage("Nome do usuário obrigatório!");
+                .NotEmpty().WithMessage("User Name is required!");
+
             RuleFor(c => c.Email)
-                .EmailAddress().WithMessage("Email do usuário inválido!");
+                .NotEmpty().WithMessage("User Email is required!")
+                .EmailAddress().WithMessage("User Email is invalid!");
+
             RuleFor(c => c.Password)
-                .NotEmpty().WithMessage("Sua senha não pode ser vazia")
-                .MinimumLength(8).WithMessage("Sua senha tem que ter pelo menos 8 caracteres")
-                .MaximumLength(16).WithMessage("Sua senha não pode ter mais de 16 caracteres")
-                .Matches(@"[A-Z]+").WithMessage("Sua senha deve ter pelo menos uma letra maiúscula"); 
+                .NotEmpty().WithMessage("User Password can't be empty!")
+                .MinimumLength(8).WithMessage("User Password had to be at least 8 characters!")
+                .MaximumLength(16).WithMessage("User Password can't have more than 16 characters!")
+                .Matches(@"[A-Z]+").WithMessage("User Password had to be at least one upper case!"); 
         }
+        #endregion 
+
     }
+
 }

@@ -1,11 +1,15 @@
-﻿using IFSPStore.Domain.Entities;
+﻿
+using IFSPStore.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace IFSPStore.Repository.Maping
 {
+
     public class UserMap : IEntityTypeConfiguration<User>
     {
+
+        #region Mapping
         public void Configure(EntityTypeBuilder<User> builder)
         {
             builder.ToTable("User");
@@ -18,5 +22,8 @@ namespace IFSPStore.Repository.Maping
             builder.Property(p => p.LoginDate);
             builder.Property(p => p.IsActive);
         }
+        #endregion 
+
     }
+
 }

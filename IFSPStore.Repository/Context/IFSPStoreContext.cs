@@ -1,11 +1,14 @@
-﻿using IFSPStore.Domain.Entities;
+﻿
+using IFSPStore.Domain.Entities;
 using IFSPStore.Repository.Maping;
 using Microsoft.EntityFrameworkCore;
 
 namespace IFSPStore.Repository.Context
 {
+
     public class IFSPStoreContext : DbContext
     {
+
         public IFSPStoreContext(DbContextOptions<IFSPStoreContext>? op=null) : base(op)
         {
             Database.EnsureCreated(); //Create database
@@ -35,5 +38,7 @@ namespace IFSPStore.Repository.Context
             modelBuilder.Entity<Sale>(new SaleMap().Configure);
             modelBuilder.Entity<SaleItem>(new SaleItemMap().Configure);
         }
+
     }
+
 }

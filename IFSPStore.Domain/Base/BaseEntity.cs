@@ -1,7 +1,10 @@
-﻿namespace IFSPStore.Domain.Base
+﻿
+namespace IFSPStore.Domain.Base
 {
     public abstract class BaseEntity<TId> : IBaseEntity
     {
+
+        #region Constructors
         public BaseEntity()
         {
 
@@ -11,9 +14,9 @@
         {
             Id = id;
         }
-        public TId Id { get; set; }
+        #endregion 
 
-        public string Nome;
+        public TId Id { get; set; }
 
     }
 }

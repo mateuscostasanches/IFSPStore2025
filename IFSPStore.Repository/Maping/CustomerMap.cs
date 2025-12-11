@@ -1,11 +1,15 @@
-﻿using IFSPStore.Domain.Entities;
+﻿
+using IFSPStore.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace IFSPStore.Repository.Maping
 {
+
     public class CustomerMap : IEntityTypeConfiguration<Customer>
     {
+
+        #region Mapping
         public void Configure(EntityTypeBuilder<Customer> builder)
         {
             builder.ToTable("Customer");
@@ -16,5 +20,8 @@ namespace IFSPStore.Repository.Maping
             builder.Property(p => p.District).IsRequired().HasMaxLength(100);
             builder.HasOne(p => p.City);
         }
+        #endregion 
+    
     }
+
 }

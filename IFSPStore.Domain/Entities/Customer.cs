@@ -1,10 +1,13 @@
-﻿using IFSPStore.Domain.Base;
+﻿
+using IFSPStore.Domain.Base;
 
 namespace IFSPStore.Domain.Entities
 {
+
     public class Customer : BaseEntity<int>
     {
 
+        #region Constructors
         public Customer()
         {
 
@@ -19,6 +22,7 @@ namespace IFSPStore.Domain.Entities
             District = district;
             City = city;
         }
+        #endregion 
 
         public string Name { get; set; }
         public string Address { get; set; }
@@ -27,4 +31,5 @@ namespace IFSPStore.Domain.Entities
         public City City { get; set; }
 
     }
+
 }

@@ -1,9 +1,13 @@
-﻿using IFSPStore.Domain.Base;
+﻿
+using IFSPStore.Domain.Base;
 
 namespace IFSPStore.Domain.Entities
 {
+
     public class Category : BaseEntity<int>
     {
+
+        #region Constructors
         public Category()
         {
 
@@ -13,7 +17,9 @@ namespace IFSPStore.Domain.Entities
         {
             Name = name;
         }
+        #endregion 
 
         public string Name { get; set; }
     }
+
 }

@@ -1,9 +1,12 @@
-﻿using IFSPStore.Domain.Base;
+﻿
+using IFSPStore.Domain.Base;
 
 namespace IFSPStore.Domain.Entities
 {
     public class User : BaseEntity<int>
     {
+
+        #region Constructors
         public User()
         {
         }
@@ -18,6 +21,7 @@ namespace IFSPStore.Domain.Entities
             LoginDate = logindate;
             IsActive = active;
         }
+        #endregion 
 
         public string Name { get; set; }
         public string Password { get; set; }
@@ -26,5 +30,7 @@ namespace IFSPStore.Domain.Entities
         public DateTime RegisterDate { get; set; }
         public DateTime LoginDate { get; set; }
         public bool IsActive { get; set; }
+
     }
+
 }

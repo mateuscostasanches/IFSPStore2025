@@ -1,20 +1,27 @@
-﻿using FluentValidation;
+﻿
+using FluentValidation;
 using IFSPStore.Domain.Entities;
     
 namespace IFSPStore.Service.Validators
 {
+
     public class CityValidator : AbstractValidator<City>
     {
 
+        #region validation 
         public CityValidator() {
 
             RuleFor(c => c.Name)
-                .NotEmpty().WithMessage("Nome da cidade obrigatório");
+                .NotEmpty().WithMessage("City is required!");
+
             RuleFor(c => c.State)
-                .NotEmpty().WithMessage("Nome do estado obrigatório")
-                .Length(2).WithMessage("O estado deve conter 2 caracteres");
+                .NotEmpty().WithMessage("State is required!")
+                .Length(2).WithMessage("State has to be 2 letters!");
 
 
         }
+        #endregion
+        
     }
+
 }

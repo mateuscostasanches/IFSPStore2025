@@ -1,7 +1,9 @@
-﻿using FluentValidation;
+﻿
+using FluentValidation;
 
 namespace IFSPStore.Domain.Base
 {
+
     public interface IBaseService<TEntity> where TEntity : IBaseEntity
     {
         public void AttachObject(object obj);
@@ -23,4 +25,5 @@ namespace IFSPStore.Domain.Base
             where TOutputModel : class;
 
     }
+
 }
