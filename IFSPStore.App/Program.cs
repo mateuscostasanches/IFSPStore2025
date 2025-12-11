@@ -13,7 +13,7 @@ namespace IFSPStore.App
             // Dependence Injection Config
             ConfigureDI.ConfigureServices();
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new MainForm());
         }
     }
 }

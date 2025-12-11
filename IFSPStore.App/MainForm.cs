@@ -1,38 +1,89 @@
+
+
+using ReaLTaiizor.Forms;
+using IFSPStore.App.Login;
 using IFSPStore.App.Infra;
 using IFSPStore.App.Register;
+using IFSPStore.Domain.Entities;
 using Microsoft.Extensions.DependencyInjection;
-using ReaLTaiizor.Forms;
 
 namespace IFSPStore.App
 {
-    public partial class Form1 : MaterialForm
+    public partial class MainForm : MaterialForm
     {
-        public Form1()
+
+        #region Variables
+        public static User user;
+        #endregion 
+
+        #region Constructor
+        public MainForm()
         {
             InitializeComponent();
+            LoadLogin();
         }
+        #endregion
 
-        private void categoryToolStripMenuItem_Click(object sender, EventArgs e)
+        #region Events ToolStripMenuItem Clicks
+        private void CategoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ShowForm<CategoryForm>();
         }
 
-        private void ShowForm<TFormulario>() where TFormulario : Form
+        private void CityToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var cad = ConfigureDI.serviceProvider!.GetService<TFormulario>();
-            if (cad != null && !cad.IsDisposed)
-            {
-                cad.MdiParent = this;
-                cad.Show();
-            }
+            ShowForm<CityForm>();
+        }
+
+        private void CustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowForm<CustomerForm>();
+        }
+
+        private void ProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowForm<ProductForm>();
+        }
+
+        private void SaleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowForm<SaleForm>();
+        }
+
+        private void UserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowForm<UserForm>();
         }
 
         private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if(e.CloseReason == CloseReason.ApplicationExitCall)
+            if (e.CloseReason == CloseReason.ApplicationExitCall)
             {
                 e.Cancel = true;
             }
         }
+        #endregion
+
+        #region Methods
+        private void ShowForm<TForms>()  where TForms : Form
+        {
+            var cad = ConfigureDI.serviceProvider!.GetService<TForms>();
+            if (cad != null && !cad.IsDisposed) cad.ShowDialog();
+        }
+
+        private void LoadLogin()
+        {
+            var login = ConfigureDI.serviceProvider!.GetService<LoginForm>();
+            if (login != null && !login.IsDisposed)
+            {
+                if (login.ShowDialog() != DialogResult.OK)
+                {
+                    Environment.Exit(0);
+                }
+            }
+        }
+        #endregion
+
     }
+
 }

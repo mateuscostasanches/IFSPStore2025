@@ -46,7 +46,6 @@ C:\mateus\IFSPStore\IFSPStore.App\bin\Debug\net8.0-windows\IFSPStore.Domain.pdb
 C:\mateus\IFSPStore\IFSPStore.App\bin\Debug\net8.0-windows\IFSPStore.Repository.pdb
 C:\mateus\IFSPStore\IFSPStore.App\bin\Debug\net8.0-windows\IFSPStore.Service.pdb
 C:\mateus\IFSPStore\IFSPStore.App\obj\Debug\net8.0-windows\IFSPStore.App.csproj.AssemblyReference.cache
-C:\mateus\IFSPStore\IFSPStore.App\obj\Debug\net8.0-windows\IFSPStore.App.Form1.resources
 C:\mateus\IFSPStore\IFSPStore.App\obj\Debug\net8.0-windows\IFSPStore.App.csproj.GenerateResource.cache
 C:\mateus\IFSPStore\IFSPStore.App\obj\Debug\net8.0-windows\IFSPStore.App.GeneratedMSBuildEditorConfig.editorconfig
 C:\mateus\IFSPStore\IFSPStore.App\obj\Debug\net8.0-windows\IFSPStore.App.AssemblyInfoInputs.cache
@@ -62,3 +61,11 @@ C:\mateus\IFSPStore\IFSPStore.App\obj\Debug\net8.0-windows\ref\IFSPStore.App.dll
 C:\mateus\IFSPStore\IFSPStore.App\obj\Debug\net8.0-windows\IFSPStore.App.Base.BaseForm.resources
 C:\mateus\IFSPStore\IFSPStore.App\obj\Debug\net8.0-windows\IFSPStore.App.Register.CategoryForm.resources
 C:\mateus\IFSPStore\IFSPStore.App\bin\Debug\net8.0-windows\Config\DbConfig.txt
+C:\mateus\IFSPStore\IFSPStore.App\obj\Debug\net8.0-windows\IFSPStore.App.Register.UserForm.resources
+C:\mateus\IFSPStore\IFSPStore.App\obj\Debug\net8.0-windows\IFSPStore.App.Register.CityForm.resources
+C:\mateus\IFSPStore\IFSPStore.App\obj\Debug\net8.0-windows\IFSPStore.App.Register.CustomerForm.resources
+C:\mateus\IFSPStore\IFSPStore.App\obj\Debug\net8.0-windows\IFSPStore.App.Register.ProductForm.resources
+C:\mateus\IFSPStore\IFSPStore.App\obj\Debug\net8.0-windows\IFSPStore.App.Register.SaleForm.resources
+C:\mateus\IFSPStore\IFSPStore.App\obj\Debug\net8.0-windows\IFSPStore.App.Properties.Resources.resources
+C:\mateus\IFSPStore\IFSPStore.App\obj\Debug\net8.0-windows\IFSPStore.App.Login.LoginForm.resources
+C:\mateus\IFSPStore\IFSPStore.App\obj\Debug\net8.0-windows\IFSPStore.App.MainForm.resources

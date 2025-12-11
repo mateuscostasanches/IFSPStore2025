@@ -36,19 +36,15 @@
             // 
             // tabControlRegister
             // 
-            tabControlRegister.Size = new Size(610, 383);
+            tabControlRegister.Size = new Size(794, 383);
             // 
             // TabPageRegister
             // 
             TabPageRegister.Controls.Add(txtId);
             TabPageRegister.Controls.Add(txtName);
-            TabPageRegister.Size = new Size(602, 348);
+            TabPageRegister.Size = new Size(786, 348);
             TabPageRegister.Controls.SetChildIndex(txtName, 0);
             TabPageRegister.Controls.SetChildIndex(txtId, 0);
-            // 
-            // TabPageList
-            // 
-            TabPageList.Size = new Size(602, 348);
             // 
             // txtName
             // 
@@ -62,7 +58,7 @@
             txtName.HideSelection = true;
             txtName.Hint = "Name";
             txtName.LeadingIcon = null;
-            txtName.Location = new Point(18, 40);
+            txtName.Location = new Point(239, 93);
             txtName.MaxLength = 32767;
             txtName.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtName.Name = "txtName";
@@ -74,7 +70,7 @@
             txtName.SelectionLength = 0;
             txtName.SelectionStart = 0;
             txtName.ShortcutsEnabled = true;
-            txtName.Size = new Size(250, 48);
+            txtName.Size = new Size(294, 48);
             txtName.TabIndex = 5;
             txtName.TabStop = false;
             txtName.TextAlign = HorizontalAlignment.Left;
@@ -89,11 +85,11 @@
             txtId.BackgroundImageLayout = ImageLayout.None;
             txtId.CharacterCasing = CharacterCasing.Normal;
             txtId.Depth = 0;
+            txtId.Enabled = false;
             txtId.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtId.HideSelection = true;
-            txtId.Hint = "Id";
-            txtId.LeadingIcon = null;
-            txtId.Location = new Point(323, 40);
+            txtId.LeadingIcon = Properties.Resources.id;
+            txtId.Location = new Point(239, 157);
             txtId.MaxLength = 32767;
             txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtId.Name = "txtId";
@@ -105,7 +101,7 @@
             txtId.SelectionLength = 0;
             txtId.SelectionStart = 0;
             txtId.ShortcutsEnabled = true;
-            txtId.Size = new Size(250, 48);
+            txtId.Size = new Size(294, 48);
             txtId.TabIndex = 6;
             txtId.TabStop = false;
             txtId.TextAlign = HorizontalAlignment.Left;
@@ -116,11 +112,13 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(616, 450);
+            ClientSize = new Size(800, 450);
             Location = new Point(0, 0);
             Name = "CategoryForm";
+            Sizable = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Category Register";
+            Load += CategoryForm_Load;
             tabControlRegister.ResumeLayout(false);
             TabPageRegister.ResumeLayout(false);
             ResumeLayout(false);

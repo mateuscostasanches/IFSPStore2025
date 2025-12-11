@@ -252,6 +252,7 @@
             ClientSize = new Size(588, 517);
             Controls.Add(tabControlRegister);
             DrawerTabControl = tabControlRegister;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "BaseForm";
             Text = "BaseForm";
             tabControlRegister.ResumeLayout(false);

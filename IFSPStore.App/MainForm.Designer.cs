@@ -1,6 +1,6 @@
 ﻿namespace IFSPStore.App
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,17 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             menuStrip1 = new MenuStrip();
             cadastrosToolStripMenuItem = new ToolStripMenuItem();
-            userToolStripMenuItem = new ToolStripMenuItem();
             categoryToolStripMenuItem = new ToolStripMenuItem();
-            productToolStripMenuItem = new ToolStripMenuItem();
             cityToolStripMenuItem = new ToolStripMenuItem();
             customerToolStripMenuItem = new ToolStripMenuItem();
+            productToolStripMenuItem = new ToolStripMenuItem();
             saleToolStripMenuItem = new ToolStripMenuItem();
+            userToolStripMenuItem = new ToolStripMenuItem();
             reportToolStripMenuItem = new ToolStripMenuItem();
             helpToolStripMenuItem = new ToolStripMenuItem();
             closeToolStripMenuItem = new ToolStripMenuItem();
+            reportToolStripMenuItem1 = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -53,47 +55,52 @@
             // 
             // cadastrosToolStripMenuItem
             // 
-            cadastrosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { userToolStripMenuItem, categoryToolStripMenuItem, productToolStripMenuItem, cityToolStripMenuItem, customerToolStripMenuItem, saleToolStripMenuItem });
+            cadastrosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { categoryToolStripMenuItem, cityToolStripMenuItem, customerToolStripMenuItem, productToolStripMenuItem, saleToolStripMenuItem, userToolStripMenuItem });
             cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             cadastrosToolStripMenuItem.Size = new Size(61, 20);
             cadastrosToolStripMenuItem.Text = "Register";
             // 
-            // userToolStripMenuItem
-            // 
-            userToolStripMenuItem.Name = "userToolStripMenuItem";
-            userToolStripMenuItem.Size = new Size(126, 22);
-            userToolStripMenuItem.Text = "User";
-            // 
             // categoryToolStripMenuItem
             // 
             categoryToolStripMenuItem.Name = "categoryToolStripMenuItem";
-            categoryToolStripMenuItem.Size = new Size(126, 22);
-            categoryToolStripMenuItem.Text = "Category";
-            categoryToolStripMenuItem.Click += categoryToolStripMenuItem_Click;
-            // 
-            // productToolStripMenuItem
-            // 
-            productToolStripMenuItem.Name = "productToolStripMenuItem";
-            productToolStripMenuItem.Size = new Size(126, 22);
-            productToolStripMenuItem.Text = "Product";
+            categoryToolStripMenuItem.Size = new Size(162, 22);
+            categoryToolStripMenuItem.Text = "New Category...";
+            categoryToolStripMenuItem.Click += CategoryToolStripMenuItem_Click;
             // 
             // cityToolStripMenuItem
             // 
             cityToolStripMenuItem.Name = "cityToolStripMenuItem";
-            cityToolStripMenuItem.Size = new Size(126, 22);
-            cityToolStripMenuItem.Text = "City";
+            cityToolStripMenuItem.Size = new Size(162, 22);
+            cityToolStripMenuItem.Text = "New City...";
+            cityToolStripMenuItem.Click += CityToolStripMenuItem_Click;
             // 
             // customerToolStripMenuItem
             // 
             customerToolStripMenuItem.Name = "customerToolStripMenuItem";
-            customerToolStripMenuItem.Size = new Size(126, 22);
-            customerToolStripMenuItem.Text = "Customer";
+            customerToolStripMenuItem.Size = new Size(162, 22);
+            customerToolStripMenuItem.Text = "New Customer...";
+            customerToolStripMenuItem.Click += CustomerToolStripMenuItem_Click;
+            // 
+            // productToolStripMenuItem
+            // 
+            productToolStripMenuItem.Name = "productToolStripMenuItem";
+            productToolStripMenuItem.Size = new Size(162, 22);
+            productToolStripMenuItem.Text = "New Product...";
+            productToolStripMenuItem.Click += ProductToolStripMenuItem_Click;
             // 
             // saleToolStripMenuItem
             // 
             saleToolStripMenuItem.Name = "saleToolStripMenuItem";
-            saleToolStripMenuItem.Size = new Size(126, 22);
-            saleToolStripMenuItem.Text = "Sale";
+            saleToolStripMenuItem.Size = new Size(162, 22);
+            saleToolStripMenuItem.Text = "New Sale...";
+            saleToolStripMenuItem.Click += SaleToolStripMenuItem_Click;
+            // 
+            // userToolStripMenuItem
+            // 
+            userToolStripMenuItem.Name = "userToolStripMenuItem";
+            userToolStripMenuItem.Size = new Size(162, 22);
+            userToolStripMenuItem.Text = "New User...";
+            userToolStripMenuItem.Click += UserToolStripMenuItem_Click;
             // 
             // reportToolStripMenuItem
             // 
@@ -113,12 +120,22 @@
             closeToolStripMenuItem.Size = new Size(48, 20);
             closeToolStripMenuItem.Text = "Close";
             // 
+            // reportToolStripMenuItem1
+            // 
+            reportToolStripMenuItem1.Name = "reportToolStripMenuItem1";
+            reportToolStripMenuItem1.Size = new Size(32, 19);
+            reportToolStripMenuItem1.Text = "Report";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlLight;
+            BackgroundImage = Properties.Resources.logo_ifsp;
+            BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(1079, 759);
             Controls.Add(menuStrip1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
             Name = "Form1";
@@ -144,5 +161,6 @@
         private ToolStripMenuItem reportToolStripMenuItem;
         private ToolStripMenuItem helpToolStripMenuItem;
         private ToolStripMenuItem closeToolStripMenuItem;
+        private ToolStripMenuItem reportToolStripMenuItem1;
     }
 }

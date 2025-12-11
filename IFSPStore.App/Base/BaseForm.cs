@@ -1,10 +1,13 @@
-﻿using ReaLTaiizor.Controls;
+﻿
+using ReaLTaiizor.Controls;
 using ReaLTaiizor.Forms;
 
 namespace IFSPStore.App.Base
 {
+
     public partial class BaseForm : MaterialForm
     {
+
         #region Variables
         protected bool IsEditMode = false;
         #endregion
@@ -67,7 +70,7 @@ namespace IFSPStore.App.Base
         #endregion
 
         #region Methods
-        private void ClearFields()
+        protected void ClearFields()
         {
             IsEditMode = false;
             foreach (var control in TabPageRegister.Controls)
@@ -127,5 +130,7 @@ namespace IFSPStore.App.Base
         }
 
         #endregion
+
     }
+
 }
