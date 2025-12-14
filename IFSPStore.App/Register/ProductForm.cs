@@ -131,6 +131,7 @@ namespace IFSPStore.App.Register
         private void ProductForm_Load(object sender, EventArgs e)
         {
             LoadCombo();
+            txtCategory.SelectedIndex = -1;
             ClearFields();
         }
         #endregion

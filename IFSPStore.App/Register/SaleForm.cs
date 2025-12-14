@@ -298,6 +298,9 @@ namespace IFSPStore.App.Register
         private void SaleForm_Load(object sender, EventArgs e)
         {
             LoadCombo();
+            txtProduct.SelectedIndex = -1;
+            txtUser.SelectedIndex = -1;
+            txtCustomer.SelectedIndex = -1;
             ClearFields();
         }
         

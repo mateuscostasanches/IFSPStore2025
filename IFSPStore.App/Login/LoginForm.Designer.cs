@@ -129,6 +129,7 @@
             Controls.Add(txtLogin);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "LoginForm";
+            Sizable = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login ";
             ResumeLayout(false);

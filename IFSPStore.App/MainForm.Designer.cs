@@ -126,7 +126,7 @@
             reportToolStripMenuItem1.Size = new Size(32, 19);
             reportToolStripMenuItem1.Text = "Report";
             // 
-            // Form1
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -138,7 +138,8 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
-            Name = "Form1";
+            Name = "MainForm";
+            Sizable = false;
             Text = "IFSP Store";
             WindowState = FormWindowState.Maximized;
             FormClosing += FormPrincipal_FormClosing;

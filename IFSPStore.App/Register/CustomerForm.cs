@@ -114,6 +114,7 @@ namespace IFSPStore.App.Register
         private void CustomerForm_Load(object sender, EventArgs e)  
         {
             LoadCombo();
+            txtCityState.SelectedIndex = -1;
             ClearFields();
         }
         #endregion 
